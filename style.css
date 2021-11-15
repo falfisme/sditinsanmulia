@@ -1,0 +1,128 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+li.nav-item {
+	margin-right: 30px;
+}
+
+button.btn-daftar {
+	padding: 6px 30px;
+}
+
+.bg-hijau {
+	background-color: #EFF8ED;
+}
+
+.bg-putih {
+	background-color: #ffffff !important;
+}
+
+.hero{
+  background-image: url("img/bg-hero.png");
+  background-size: cover;
+  padding: 160px 0 !important;
+}
+
+.ayat{
+	padding: 120px 0 !important;
+	background-color: #ffffff !important;
+}
+
+.visimisi{
+	 padding: 160px 0 !important;
+	 background-color: #EFF8ED;
+}
+
+.qa{
+	padding: 120px 0 !important;
+}
+
+.program{
+	padding: 120px 0 !important;
+}
+
+.galeri{
+	padding: 120px 0 !important;
+}
+
+th{
+	background-color: #96BB7C !important;
+	color: white !important;
+}
+
+.card{
+	box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+	padding: 20px;
+}
+
+.icon-card{
+	color: #96BB7C;
+}
+
+.carousel-item {
+  	height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+.carousel, .slide,
+.carousel .carousel-inner,
+.carousel .carousel-item,
+.carousel .carousel-item img,
+.carousel .carousel-control {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+footer{
+	background-color: #398900;
+}
+
+.footer-font{
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	font-size: 8pt;
+	align-content: space-around;
+}
+
+.fab{
+	color: white;
+	letter-spacing: 15px;
+}
+
+p.bagian-footer{
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+ul.bagian-footer {
+  list-style-type: none;
+  font-size: 12pt;
+  line-height: 180%;
+}
+
+h4{
+	color: #96BB7C;
+}
+
+button.hijau {
+	background-color: #398900;
+	color: white;
+}
+
+button.hijau:hover {
+	background-color: #ffffff;
+	border-style: solid;
+	border-color: #398900;
+	color: #398900;
+}
+
+h1.display-2 {
+	font-weight: bold;
+	color: #398900;
+}
