@@ -1,3 +1,3 @@
 # sditinsanmulia
 
-falfisme.github.io/sditinsanmulia
+https://falfisme.github.io/sditinsanmulia
