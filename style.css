@@ -4,6 +4,8 @@
 	padding: 0;
 }
 
+/*  Index.html */
+
 li.nav-item {
 	margin-right: 30px;
 }
@@ -87,7 +89,6 @@ footer{
 	letter-spacing: 1px;
 	color: #FFFFFF;
 	font-size: 8pt;
-	align-content: space-around;
 }
 
 .fab{
@@ -125,4 +126,42 @@ button.hijau:hover {
 h1.display-2 {
 	font-weight: bold;
 	color: #398900;
+}
+
+.footer-tulisan {
+	/* Center vertically */
+  display: flex;
+  align-items: center;
+}
+
+/* Small devices */
+@media only screen and (max-width: 991px) {
+	.padding-misi {
+		padding-top: 40px;
+	}
+} 
+
+
+/* End of Index.html */
+
+
+/* Pendaftaran.html */
+.hero-pendaftaran{
+  background-image: url("img/banner-submenu.png");
+  background-size: cover;
+  padding: 80px 0 !important;
+  position: relative;
+}
+
+.judul-hero-daftar{
+	position: absolute;
+  bottom: 16px;
+  left: 180px;
+  font-weight: 600;
+  color: #398900;
+}
+
+.isi{
+	padding: 120px 0 !important;
+	background-color: #ffffff;
 }
