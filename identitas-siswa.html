@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SDIT Insan Mulia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<!-- Nav -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+        <nav class="navbar navbar-light bg-white">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" width="160" alt="">
+            </a>
+        </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="pendaftaran.html"><button class="btn btn-daftar btn-success my-2 my-sm-0" type="submit">Daftar</button></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</nav>
+<!-- End of Nav -->
+<!-- Hero -->
+<div class="mb-0 hero-pendaftaran">
+    <div class="container">
+        <h2 class="judul-hero-daftar">Identitas Siswa</h2>
+    </div>
+</div>
+<!-- End of Hero -->
+<!-- Isi -->
+<div class="isi-pendaftaran">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <nav class="sticky">
+                    <ul class="list-inline">
+                        <li class="nav-kiri"><a href="#a">01</a></li>
+                        <li class="nav-kiri"><a href="#b">Identitas Siswa</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-9 ">
+                <div id="#a" class="alur-pendaftaran">
+                    <article class="section" id="a"></article>
+                    <h5 class="subjudul">Petunjuk Pengisian</h5>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <hr>
+                <div id="#b" class="form-pendaftaran">
+                    <article class="section" id="b"></article>
+                    <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-8 mb-3">
+                                <label for="nama-siswa">Nama Siswa</label>
+                                <input type="text" class="form-control" id="nama-siswa"  required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom02">Nama Panggilan</label>
+                                <input type="text" class="form-control" id="validationCustom02"  required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom04">Jenis Kelamin</label>
+                                <select class="custom-select" id="validationCustom04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option value="Laki-laki">Laki-laki</option>
+                                    <option value="Laki-laki">Perempuan</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Pilih jenis kelamin.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Tempat Lahir</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom05">Tanggal Lahir</label>
+                                <input type="date" class="form-control" id="validationCustom05" required>
+                                <div class="invalid-feedback">
+                                    Please provide a tanggal.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Upload Foto 3x4</label>
+                                <br>
+                                <input class="btn btn-warning btn-lg btn-block" type='file' onchange="readURL(this);" />
+                                <img id="blah" src="#" alt=" " />
+                                
+                            </div>
+                        </div>
+                        <hr>
+                        <b>Alamat</b>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Jalan</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Kelurahan</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom03">RT</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom03">RW</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Kecamatan</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Kota</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Propinsi</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Kode Pos</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Telpon Rumah</label>
+                                <input type="text" class="form-control" id="validationCustom03">
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">No. HP</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <b>Alamat yang dapat dihubungi sewaktu-waktu</b>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Hubungan Dengan Siswa</label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="Contoh : Paman, Bibi" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Jalan</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Kelurahan</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom03">RT</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom03">RW</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Kecamatan</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Kota</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Propinsi</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Kode Pos</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Telpon Rumah</label>
+                                <input type="text" class="form-control" id="validationCustom03">
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">No. HP</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Anak Ke-</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom03">Jumlah Saudara Kandung</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom03">Jumlah Saudara Tiri</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom03">Jumlah Saudara Angkat</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom04">Status Siswa Dalam Keluarga</label>
+                                <select class="custom-select" id="validationCustom04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option value="Yatim">Yatim</option>
+                                    <option value="Piatu">Piatu</option>
+                                    <option value="Yatim Piatu">Yatim Piatu</option>
+                                    <option value="Anak Tiri">Anak Tiri</option>
+                                    <option value="Anak Angkat">Anak Angkat</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Pilih jenis kelamin.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Warga Negara</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Agama</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Keadaan Jasmani</label>
+                                <select class="custom-select" id="validationCustom04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option value="Sehat">Sehat</option>
+                                    <option value="Cacat">Cacat</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                         <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Bila Cacat Sebutkan</label>
+                                <input type="text" class="form-control" id="validationCustom03">
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Jarak Sekolah</label>
+                                <select class="custom-select" id="validationCustom04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option value="0 – 2 km">0 – 2 km</option>
+                                    <option value="2.1 – 4 km">2.1 – 4 km</option>
+                                    <option value="4.1 – 6 km">4.1 – 6 km</option>
+                                    <option value="6.1 – 8 km">6.1 – 8 km</option>
+                                    <option value="8.1 – 10 km">8.1 – 10 km</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Bahasa Sehari-hari</label>
+                                <select class="custom-select" id="validationCustom04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                                    <option value="Bahasa Asing">Bahasa Asing</option>
+                                    <option value="Bahasa Daerah">Bahasa Daerah</option>
+                                    <option value="Bahasa Campuran">Bahasa Campuran</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Bila Selain Bahasa Indonesia Sebutkan</label>
+                                <input type="text" class="form-control" id="validationCustom03">
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Status Rumah yang Ditempati</label>
+                                <select class="custom-select" id="validationCustom04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option value="Rumah Sendiri">Rumah Sendiri</option>
+                                    <option value="Rumah Ngontrak">Rumah Ngontrak</option>
+                                    <option value="Rumah Dinas">Rumah Dinas</option>
+                                    <option value="Lainnya">Lainnya</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Siswa tinggal bersama</label>
+                                <select class="custom-select" id="validationCustom04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option value="Orang Tua">Orang Tua</option>
+                                    <option value="Saudara Kandung">Saudara Kandung</option>
+                                    <option value="Paman/Bibi">Paman/Bibi</option>
+                                    <option value="Kakek/Nenek">Kakek/Nenek</option>
+                                    <option value="Lainnya">Lainnya</option>
+
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <hr>
+
+                        <b>Latar Belakang Pendidikan</b>
+
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Nama Asal Sekolah</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Kota Asal Sekolah</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Status Sekolah</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Bila lokasi di luar negeri sebutkan nama negaranya</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <b>Kondisi Kesehatan Siswa</b>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Apakah siswa memiliki alergi makanan?</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Apakah siswa memiliki alergi obat obatan?</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Apakah siswa memiliki alergi lainnya? (Seperti debu/udara)</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Kecelakaan yang pernah dialami</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Jenis penyakit yang pernah diderita</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom03">Pada usia?</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom03">Berapa Lama?</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Proses Kelahiran</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Pernah mengikuti terapi psikologi?</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid alamat.
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    <button class="btn btn-success btn-lg btn-block" type="submit">Simpan Data</button>
+                    </form>
+                    <script>
+                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                    (function() {
+                        'use strict';
+                        window.addEventListener('load', function() {
+                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                            var forms = document.getElementsByClassName('needs-validation');
+                            // Loop over them and prevent submission
+                            var validation = Array.prototype.filter.call(forms, function(form) {
+                                form.addEventListener('submit', function(event) {
+                                    if (form.checkValidity() === false) {
+                                        event.preventDefault();
+                                        event.stopPropagation();
+                                    }
+                                    form.classList.add('was-validated');
+                                }, false);
+                            });
+                        }, false);
+                    })();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Isi -->
+<!-- Footer -->
+<div class="bg-hijau p-5">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="col mb-4">
+                <img src="img/logo.png" width="160" alt="">
+            </div>
+            <div class="col mb-4">
+                <p class="bagian-footer">Lainnya</p>
+                <ul class="bagian-footer">
+                    <li>Tentang Kami</li>
+                    <li>Kompetensi Guru</li>
+                    <li>Kurikulum</li>
+                    <li>Berita</li>
+                </ul>
+            </div>
+            <div class="col mb-4">
+                <p class="bagian-footer">Link</p>
+                <ul class="bagian-footer">
+                    <li>Pendaftaran</li>
+                    <li>Pengumuman Kelulusan</li>
+                    <li>Hubungi Whatsapp</li>
+                </ul>
+            </div>
+            <div class="col mb-4">
+                <p class="bagian-footer">Hubungi Kami</p>
+                <ul class="bagian-footer">
+                    <li><i class="fas fa-phone-alt"></i> 0858 9359 1855 </li>
+                    <li><i class="fas fa-map-marker-alt"></i> Masjid Akbar Kemayoran
+                        Jakarta Pusat</li>
+                    <li><i class="fas fa-envelope"></i> sditinsanmulia@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="paling-bawah">
+    <div class="container p-3">
+        <div class="row">
+            <div class="footer-tulisan col-auto mr-auto">
+                <h6 class="footer-font">SDIT Insan Mulia Jakarta 2021</h6>
+            </div>
+            <div class="col-auto ml-auto">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer class="paling-bawah-mobile">
+    <div class="container p-3">
+        <div class="row">
+            <div class="col-auto">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="footer-tulisan col-auto">
+                <h6 class="footer-font">SDIT Insan Mulia Jakarta 2021</h6>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/816f06de44.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+            $('#blah')
+                .attr('src', e.target.result)
+                .width(300);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$('li.nav-kiri a').click(function(e) {
+    $(this).css('font-weight', 'bold');
+})
+</script>
+</body>
+
+</html>
