@@ -22,6 +22,7 @@ button.btn-daftar {
 	background-color: #ffffff !important;
 }
 
+
 .hero{
   background-image: url("img/bg-hero.png");
   background-size: cover;
@@ -108,8 +109,9 @@ ul.bagian-footer {
   line-height: 180%;
 }
 
+
 h4{
-	color: #96BB7C;
+	color: #398900;
 }
 
 button.hijau {
@@ -176,13 +178,24 @@ h1.display-2 {
 }
 
 .subjudul{
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 	padding-top: 10px;
 	color: #398900;
 }
 
+.alur-pendaftaran{
+	background-color: #EFF8ED;
+	padding: 30px;
+	border-radius: 15px;
+}
+
 .form-pendaftaran{
 	margin-bottom: 120px;
+	background-color: white;
+	padding: 30px;
+	border-radius: 15px;
+	border-color: #EFF8ED;
+	border-style: solid;
 }
 
 .sticky {
@@ -193,9 +206,11 @@ h1.display-2 {
 	padding-top: 10px;
 }
 
-.nav-kiri{
+li.nav-kiri a{
 	color: #398900 !important;
 }
+
+
 .list-inline {
 	list-style: none;
 	margin-left: -0.5em;
