@@ -1,0 +1,335 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*  Index.html */
+
+li.nav-item {
+    margin-right: 30px;
+}
+
+button.btn-daftar {
+    padding: 6px 30px;
+}
+
+.bg-hijau {
+    background-color: #EFF8ED;
+}
+
+.bg-putih {
+    background-color: #ffffff !important;
+}
+
+.hero {
+    background-image: url("img/bg-hero.png");
+    background-size: cover;
+    padding: 160px 0 !important;
+}
+
+.ayat {
+    padding: 120px 0 !important;
+    background-color: #ffffff !important;
+}
+
+.visimisi {
+    padding: 160px 0 !important;
+    background-color: #EFF8ED;
+}
+
+.qa {
+    padding: 120px 0 !important;
+}
+
+.program {
+    padding: 120px 0 !important;
+}
+
+.galeri {
+    padding: 120px 0 !important;
+}
+
+th {
+    background-color: #96BB7C !important;
+    color: white !important;
+}
+
+.card {
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    padding: 20px;
+}
+
+.icon-card {
+    color: #96BB7C;
+}
+
+.carousel-item {
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+.carousel,
+.slide,
+.carousel .carousel-inner,
+.carousel .carousel-item,
+.carousel .carousel-item img,
+.carousel .carousel-control {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+footer {
+    background-color: #398900;
+}
+
+.footer-font {
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    font-size: 8pt;
+    padding-top: 5px;
+}
+
+.fab {
+    color: white;
+    letter-spacing: 15px;
+}
+
+p.bagian-footer {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+ul.bagian-footer {
+    list-style-type: none;
+    font-size: 12pt;
+    line-height: 180%;
+}
+
+h4 {
+    color: #398900;
+}
+
+button.hijau {
+    background-color: #398900;
+    color: white;
+}
+
+button.hijau:hover {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #398900;
+    color: #398900;
+}
+
+h1.display-2 {
+    font-weight: bold;
+    color: #398900;
+}
+
+.paling-bawah-mobile {
+    display: none;
+}
+
+
+/* Small devices */
+
+@media only screen and (max-width: 991px) {
+    .padding-misi {
+        padding-top: 40px;
+    }
+    .paling-bawah {
+        display: none;
+        align-items: center;
+    }
+    .paling-bawah-mobile {
+        display: block;
+    }
+}
+
+
+/* End of Index.html */
+
+
+/* Pendaftaran.html */
+
+.hero-pendaftaran {
+    background-image: url("img/banner-submenu.png");
+    background-size: cover;
+}
+
+.isi-pendaftaran {
+    margin-top: 50px;
+}
+
+.judul-hero-daftar {
+    padding-top: 90px;
+    padding-bottom: 30px;
+    font-weight: 500;
+    color: #398900;
+}
+
+.isi {
+    padding: 120px 0 !important;
+    background-color: #ffffff;
+}
+
+.subjudul {
+    padding-bottom: 15px;
+    padding-top: 10px;
+    color: #398900;
+}
+
+.alur-pendaftaran {
+    background-color: #EFF8ED;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.form-pendaftaran {
+    margin-bottom: 120px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    border-color: #EFF8ED;
+    border-style: solid;
+}
+
+.sticky {
+    background-color: #ffffff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+}
+
+li.nav-kiri a {
+    color: #398900 !important;
+}
+
+.list-inline {
+    list-style: none;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    padding: 0;
+}
+
+.list-inline>li {
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.list-inline>li:before {
+    content: "\200B";
+    /* 1 */
+    position: absolute;
+    /* 2 */
+}
+
+ol {
+    counter-reset: li;
+    margin: 20px 0;
+    padding-left: 0;
+}
+
+ol>li {
+    position: relative;
+    margin: 0 0 25px 2em;
+    padding: 4px 8px 4px 20px;
+    list-style: none;
+}
+
+ol>li::before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    top: -2px;
+    left: -2em;
+    width: 2em;
+    margin-right: 8px;
+    padding: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+li ol,
+li ul {
+    margin-top: 6px;
+}
+
+ol ol li:last-child {
+    margin-bottom: 0;
+}
+
+.disc>li::before {
+    color: white;
+    background-color: #398900;
+    border-radius: 50%;
+}
+
+.circle>li::before {
+    color: blue;
+    border: solid 2px blue;
+    border-radius: 50%;
+}
+
+.angle>li::before {
+    color: blue;
+    border-right: solid 3px blue;
+    border-bottom: solid 3px blue;
+}
+
+.shadow>li::before {
+    color: white;
+    background: blue;
+    box-shadow: 5px 5px 0 0 darken(blue, 20%);
+}
+
+.rombo>li {
+    margin-bottom: 25px;
+}
+
+.rombo>li::before {
+    color: white;
+    z-index: 2;
+}
+
+.rombo>li::after {
+    position: absolute;
+    top: -2px;
+    left: -2em;
+    width: 2em;
+    margin-right: 8px;
+    padding: 4px;
+    background-color: blue;
+    height: 2em;
+    transform: rotate(45deg);
+    content: '';
+    z-index: 1;
+}
+
+.underline>li::before {
+    border-bottom: solid 3px blue;
+}
+
+
+/* Small devices */
+
+@media only screen and (max-width: 991px) {
+    .hero-pendaftaran {
+        align-items: center;
+        align-content: center;
+    }
+    .judul-hero-daftar {
+        padding-top: 90px;
+        padding-bottom: 30px;
+        font-size: ;
+        color: #398900;
+        text-align: center;
+    }
+}
