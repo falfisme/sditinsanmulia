@@ -6,18 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SDIT Insan Mulia</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style-sass.css">
 </head>
-<!-- Nav -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<body>
+ <!-- Nav -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
         <nav class="navbar navbar-light bg-white">
             <a class="navbar-brand" href="#">
-                <img src="img/logo.png" width="160" alt="">
+                <img src="assets/img/logo.png" width="160" alt="">
             </a>
         </nav>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,8 +31,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
-                <li class="nav-item active">
-                    <a href="pendaftaran.html"><button class="btn btn-daftar btn-success my-2 my-sm-0" type="submit">Daftar</button></a>
+                <li class="nav-item">
+                    <a href="pendaftaran.html"><button class="btn px-4 py-2 btn-success my-2 my-sm-0" type="submit">DAFTAR</button></a>
                 </li>
             </ul>
         </div>
@@ -44,44 +41,48 @@
 </nav>
 <!-- End of Nav -->
 <!-- Hero -->
-<div class="mb-0 hero-pendaftaran">
+<div class="mb-0 bg-subhero">
     <div class="container">
-        <h2 class="judul-hero-daftar">Pendaftaran Siswa Baru</h2>
+        <h2 class="pt-10 pb-4 font-weight-normal text-success text-md-left text-sm-center">Pendaftaran Siswa Baru</h2>
     </div>
 </div>
 <!-- End of Hero -->
 <!-- Isi -->
-<div class="isi-pendaftaran">
+<div class="mt-5 bg-white-snow">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
                 <nav class="sticky">
-                    <ul class="list-inline">
-                        <li class="nav-kiri"><a href="#a">Alur Pendaftaran</a></li>
-                        <li class="nav-kiri"><a href="#b">Form Pendaftaran</a></li>
-                    </ul>
+                    <div id="list-inline">
+                        <p class="mb-0 text-success pl-2 pb-2"><a href="#a" class="text-success">Alur Pendaftaran</a></p>
+                        <p class="mb-0 text-success pl-2 pb-2"><a href="#b" class="text-success">Form Pendaftaran</a></p>
+                    </div> 
+                    <!-- <ul class="list-inline">
+                        <li><a href="#a" class="text-success">Alur Pendaftaran</a></li>
+                        <li></li>
+                    </ul> -->
                 </nav>
             </div>
             <div class="col-md-9 ">
-                <div id="#a" class="alur-pendaftaran">
-                    <article class="section" id="a"></article>
-                    <h5 class="subjudul">Alur Pendaftaran</h5>
-                    <hr>
-                <ol class="disc">
+                <article class="section" id="a"></article>
+                <div id="#a" class="bg-white-green-radial p-5 rounded-15">
+                    <h5 class="text-success">Alur Pendaftaran</h5>
+                    <div class="line-border-left"></div>
+                <ol class="disc gray font-2">
                     <li>Melakukan Pembayaran (Diharapkan menyimpan bukti pembayaran sebagai bukti pendaftaran) </li>
                     <li>Mengisi Form Pendaftaran dibawah dengan mengupload bukti pembayaran sebelumnya</li>
                     <li>Tim kami akan memberi tahu lewat whatsapp mengenai formulir pendaftaran calon siswa</li>
-                    <li>Setelah mengisi <a href="form-pendaftaran.html" title="">formulir</a> yang dikirimkan melalui whatsapp, maka tinggal menunggu pengumuman</li>
+                    <li class="mb-0">Setelah mengisi <a href="form-pendaftaran.html" title="">formulir</a> yang dikirimkan melalui whatsapp, maka tinggal menunggu pengumuman</li>
                 </ol>
                 </div>
                 
 
                 <hr>
-
-                <div id="#b" class="form-pendaftaran">
-                     <article class="section" id="b"></article>
-                    <h5 class="subjudul">Form Pendaftaran</h5>
-                    <hr>
+                <article class="section" id="b"></article>
+                <div id="#b" class="form-register p-5 mb-5 rounded-15 bg-white gray">
+                     
+                    <h5 class="text-success">Form Pendaftaran</h5>
+                    <div class="line-border-left"></div>
                 <form>
   <div class="form-group row">
     <label for="staticEmail" class="col-sm-3 col-form-label">Nama</label>
@@ -98,14 +99,22 @@
   <div class="form-group row">
     <label for="staticEmail" class="col-sm-3 col-form-label">Upload Bukti Pembayaran</label>
     <div class="col-sm-9">
-      <input type='file' onchange="readURL(this);" />
-    <img id="blah" src="#" alt=" " />
+    <div class="custom-file">
+        <input type="file" class="custom-file-input" id="inputGroupFile02" onchange="readURL(this);">
+        <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Cari Bukti Pembayaran ...</label>
+      </div>
     </div>
   </div>
   <div class="form-group row">
+    <div class="col-sm-3 col-form-label mt-0"></div>
+    <div class="col-sm-9 text-center">
+        <img id="blah" class="" src="#" alt=" " />
+  </div>
+</div>
+  <div class="form-group row">
     <div class="col-sm-3 col-form-label"></div>
     <div class="col-sm-9">
-       <button type="submit" class="btn btn-success btn-lg btn-block">Daftar</button>
+       <button type="submit" class="btn btn-success text-uppercase btn-lg btn-block">Daftar</button>
   </div>
  
 </form>
@@ -116,16 +125,16 @@
     </div>
 </div>
 <!-- End of Isi -->
-<!-- Footer -->
-<div class="bg-hijau p-5">
-    <div class="container">
+  <!-- Footer -->
+  <div class="bg-green-2 p-5">
+    <div class="container container-footer">
         <div class="row row-cols-1 row-cols-md-4">
             <div class="col mb-4">
-                <img src="img/logo.png" width="160" alt="">
+                <img src="assets/img/logo.png" width="160" alt="">
             </div>
             <div class="col mb-4">
-                <p class="bagian-footer">Lainnya</p>
-                <ul class="bagian-footer">
+                <p class="footer">Lainnya</p>
+                <ul class="footer font-2 gray">
                     <li>Tentang Kami</li>
                     <li>Kompetensi Guru</li>
                     <li>Kurikulum</li>
@@ -133,52 +142,54 @@
                 </ul>
             </div>
             <div class="col mb-4">
-                <p class="bagian-footer">Link</p>
-                <ul class="bagian-footer">
+                <p class="footer">Link</p>
+                <ul class="footer font-2 gray">
                     <li>Pendaftaran</li>
                     <li>Pengumuman Kelulusan</li>
                     <li>Hubungi Whatsapp</li>
                 </ul>
             </div>
             <div class="col mb-4">
-                <p class="bagian-footer">Hubungi Kami</p>
-                <ul class="bagian-footer">
-                    <li><i class="fas fa-phone-alt"></i> 0858 9359 1855 </li>
-                    <li><i class="fas fa-map-marker-alt"></i> Masjid Akbar Kemayoran
-                        Jakarta Pusat</li>
-                    <li><i class="fas fa-envelope"></i> sditinsanmulia@gmail.com</li>
+                <p class="footer">Hubungi Kami</p>
+                <ul class="footer font-2 gray">
+                    <li>
+                        <div class="row">
+                            <div class="col-1"><i class="fas fa-phone-alt"></i></div>
+                            <div class="col-10">0858 9359 1855</div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-1"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="col-10">Masjid Akbar Kemayoran Jakarta Pusat</div>
+                        </div>  
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-1"><i class="fas fa-envelope"></i></div>
+                            <div class="col-10">sditinsanmulia@gmail.com</div>
+                        </div>  
+                    </li>
                 </ul>
             </div>
         </div>
+
     </div>
 </div>
-<footer class="paling-bawah">
+<footer class="bg-green-1">
     <div class="container p-3">
-        <div class="row">
-            <div class="footer-tulisan col-auto mr-auto">
-                <h6 class="footer-font">SDIT Insan Mulia Jakarta 2021</h6>
-            </div>
-            <div class="col-auto ml-auto">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-whatsapp"></i>
-            </div>
-        </div>
-    </div>
-</footer>
-<footer class="paling-bawah-mobile">
-    <div class="container p-3">
-        <div class="row">
-            <div class="col-auto">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-whatsapp"></i>
-            </div>
-            <div class="footer-tulisan col-auto">
-                <h6 class="footer-font">SDIT Insan Mulia Jakarta 2021</h6>
-            </div>
+        <div class="center d-flex flex-items-center flex-column-reverse flex-lg-row flex-wrap flex-lg-nowrap mb-0 pb-0">
+            <ul class=" list-style-none d-flex flex-wrap col-0 col-lg-10 flex-justify-start flex-lg-justify-between mb-0 pb-0 mb-lg-0 text-center">
+                <li class="footer-font d-flex flex-items-center text-center mt-1">
+                    <p class="text-center">SDIT Insan Mulia Jakarta 2021</p> 
+                </li>
+            </ul>
+            <ul class=" d-flex flex-wrap col-12 col-lg-2 flex-justify-start flex-lg-justify-between mb-0 pb-0 mb-lg-0">
+                <a href=""><i class="fab fa-instagram mr-3 mr-lg-0"></i></a>
+                <a href=""><i class="fab fa-facebook mr-3 mr-lg-0"></i></a>
+                <a href=""><i class="fab fa-youtube mr-3 mr-lg-0"></i></a>
+                <a href=""><i class="fab fa-whatsapp mr-3 mr-lg-0"></i></a>
+            </ul>
         </div>
     </div>
 </footer>
@@ -195,17 +206,39 @@
                 reader.onload = function (e) {
                     $('#blah')
                         .attr('src', e.target.result)
-                        .width(150)
-                        .height(200);
+                        .width(200);
                 };
 
                 reader.readAsDataURL(input.files[0]);
             }
         }
 
-    $('li.nav-kiri a').click(function(e){
-        $(this).css('font-weight','bold');
-    })
+    // $('li.nav-kiri a').click(function(e){
+    //     $(this).css('font-weight','bold');
+    // })
+
+    // bold
+    function toggleBold(el) {
+    var siblings = el.parentNode.getElementsByTagName('p');
+    for (var i = 0, len = siblings.length; i<len; i++){
+        if (siblings[i] == el){
+            el.style.fontWeight = el.style.fontWeight == 'bold' ? 'normal' : 'bold';
+            el.classList.add("border-left");
+        }
+        else {
+            siblings[i].style.fontWeight = 'normal';
+            siblings[i].classList.remove("border-left");
+        }
+    }
+}
+
+var paragraphs = document.getElementsByTagName('p');
+
+for (var i = 0, len = paragraphs.length; i<len; i++){
+    paragraphs[i].onclick = function(){
+        toggleBold(this);
+    };
+}
 </script>
 </body>
 
